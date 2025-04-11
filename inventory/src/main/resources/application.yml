@@ -1,3 +1,5 @@
 spring:
   application:
     name: Inventory
+server:
+  port: 8081

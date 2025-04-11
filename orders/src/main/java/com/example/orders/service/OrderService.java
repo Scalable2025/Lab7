@@ -2,14 +2,8 @@ package com.example.orders.service;
 
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
 public class OrderService {
-
-    public String createOrder() {
-        // TODO:Check if inventory is available using OpenFeign
-
-        // TODO:Send a message to shipping for order creation
-
-        return "Order created successfully!";
-    }
 }
