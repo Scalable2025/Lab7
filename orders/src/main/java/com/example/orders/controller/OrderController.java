@@ -12,6 +12,6 @@ public class OrderController {
 
     @GetMapping("/{amount}")
     public String createOrder(@PathVariable int amount) {
-        return "this.orderService.createOrder(amount);";
+        return this.orderService.createOrder(amount);
     }
 }

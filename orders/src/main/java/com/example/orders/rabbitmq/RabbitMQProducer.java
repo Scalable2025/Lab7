@@ -16,6 +16,6 @@ public class RabbitMQProducer {
                 RabbitMQConfig.SHIPPING_ROUTING_KEY,
                 message
         );
-        System.out.println("Sent From Cart: " + message);
+        System.out.println("Sent From Orders (id): " + message);
     }
 }

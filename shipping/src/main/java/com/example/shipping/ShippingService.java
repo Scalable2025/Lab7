@@ -6,5 +6,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ShippingService {
-
+    @RabbitListener(queues = RabbitMQConfig.SHIPPING_QUEUE)
+    public void notifyShipping(String id) {
+        System.out.println("Received order: " + id);
+    }
 }
